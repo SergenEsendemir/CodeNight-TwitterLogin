@@ -1,0 +1,128 @@
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\csc.exe
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\vbc.exe
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll.config
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.pdb
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\EntityFramework.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\EntityFramework.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.xml
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.csprojResolveAssemblyReference.cache
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.dll
+C:\Users\MSİ\Documents\Visual Studio 2015\Projects\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.pdb
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\csc.exe
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\vbc.exe
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll.config
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.pdb
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\EntityFramework.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\EntityFramework.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.xml
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.csprojResolveAssemblyReference.cache
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.dll
+C:\Users\MSI\Desktop\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.pdb
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll.config
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\TwitterWebApi.pdb
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Webpages.Razor.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.dll
+C:\Users\ASUS\Desktop\CodeNight\CodeNight\TwitterWebApi\TwitterWebApi\obj\Debug\TwitterWebApi.pdb

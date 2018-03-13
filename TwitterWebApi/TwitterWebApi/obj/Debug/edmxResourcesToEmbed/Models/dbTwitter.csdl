@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbTwitterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblBegeniKutusu">
+    <Key>
+      <PropertyRef Name="BegeniKutusuID" />
+    </Key>
+    <Property Name="BegeniKutusuID" Type="Int32" Nullable="false" />
+    <Property Name="BegeniID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="tblBegeniler" Relationship="Self.FK_tblBegeniKutusu_tblBegeniler" FromRole="tblBegeniKutusu" ToRole="tblBegeniler" />
+  </EntityType>
+  <EntityType Name="tblBegeniler">
+    <Key>
+      <PropertyRef Name="BegeniID" />
+    </Key>
+    <Property Name="BegeniID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TweetID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblBegeniKutusu" Relationship="Self.FK_tblBegeniKutusu_tblBegeniler" FromRole="tblBegeniler" ToRole="tblBegeniKutusu" />
+    <NavigationProperty Name="tblTweetler" Relationship="Self.FK_tblBegeniler_tblTweetler" FromRole="tblBegeniler" ToRole="tblTweetler" />
+  </EntityType>
+  <EntityType Name="tblBildirimKutusu">
+    <Key>
+      <PropertyRef Name="BildirimKutusuID" />
+    </Key>
+    <Property Name="BildirimKutusuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BildirimID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblBildirimler" Relationship="Self.FK_tblBildirimKutusu_tblBildirimler" FromRole="tblBildirimKutusu" ToRole="tblBildirimler" />
+  </EntityType>
+  <EntityType Name="tblBildirimler">
+    <Key>
+      <PropertyRef Name="BildirimID" />
+    </Key>
+    <Property Name="BildirimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BildirimMesaji" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tblBildirimKutusu" Relationship="Self.FK_tblBildirimKutusu_tblBildirimler" FromRole="tblBildirimler" ToRole="tblBildirimKutusu" />
+    <NavigationProperty Name="tblTakipci" Relationship="Self.FK_tblTakipci_tblBildirimler" FromRole="tblBildirimler" ToRole="tblTakipci" />
+    <NavigationProperty Name="tblTakipEdilen" Relationship="Self.FK_tblTakipEdilen_tblBildirimler" FromRole="tblBildirimler" ToRole="tblTakipEdilen" />
+  </EntityType>
+  <EntityType Name="tblDM">
+    <Key>
+      <PropertyRef Name="DmID" />
+    </Key>
+    <Property Name="DmID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DmMesajBilgisi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblKullaniciBilgileri" Relationship="Self.FK_tblDM_tblKullaniciBilgileri" FromRole="tblDM" ToRole="tblKullaniciBilgileri" />
+    <NavigationProperty Name="tblDMKutusu" Relationship="Self.FK_tblDMKutusu_tblDM" FromRole="tblDM" ToRole="tblDMKutusu" />
+  </EntityType>
+  <EntityType Name="tblDMKutusu">
+    <Key>
+      <PropertyRef Name="DmKutusuID" />
+    </Key>
+    <Property Name="DmKutusuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DmID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblDM" Relationship="Self.FK_tblDMKutusu_tblDM" FromRole="tblDMKutusu" ToRole="tblDM" />
+  </EntityType>
+  <EntityType Name="tblKullaniciBilgileri">
+    <Key>
+      <PropertyRef Name="KullaniciBilgileriID" />
+    </Key>
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdiSoyadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KullaniciTelefon" Type="Int32" Nullable="false" />
+    <Property Name="KullaniciEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KullaniciSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NickName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tblDM" Relationship="Self.FK_tblDM_tblKullaniciBilgileri" FromRole="tblKullaniciBilgileri" ToRole="tblDM" />
+    <NavigationProperty Name="tblKullanicilar" Relationship="Self.FK_tblKullanicilar_tblKullaniciBilgileri" FromRole="tblKullaniciBilgileri" ToRole="tblKullanicilar" />
+    <NavigationProperty Name="tblTakipci" Relationship="Self.FK_tblTakipci_tblKullaniciBilgileri" FromRole="tblKullaniciBilgileri" ToRole="tblTakipci" />
+    <NavigationProperty Name="tblTakipEdilen" Relationship="Self.FK_tblTakipEdilen_tblKullaniciBilgileri" FromRole="tblKullaniciBilgileri" ToRole="tblTakipEdilen" />
+    <NavigationProperty Name="tblTweetler" Relationship="Self.FK_tblTweetler_tblKullaniciBilgileri" FromRole="tblKullaniciBilgileri" ToRole="tblTweetler" />
+  </EntityType>
+  <EntityType Name="tblKullanicilar">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nickname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KullaniciSifre" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblKullaniciBilgileri" Relationship="Self.FK_tblKullanicilar_tblKullaniciBilgileri" FromRole="tblKullanicilar" ToRole="tblKullaniciBilgileri" />
+  </EntityType>
+  <EntityType Name="tblTakipci">
+    <Key>
+      <PropertyRef Name="TakipciID" />
+    </Key>
+    <Property Name="TakipciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" />
+    <Property Name="BildirimID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblBildirimler" Relationship="Self.FK_tblTakipci_tblBildirimler" FromRole="tblTakipci" ToRole="tblBildirimler" />
+    <NavigationProperty Name="tblKullaniciBilgileri" Relationship="Self.FK_tblTakipci_tblKullaniciBilgileri" FromRole="tblTakipci" ToRole="tblKullaniciBilgileri" />
+    <NavigationProperty Name="tblTakipciKutusu" Relationship="Self.FK_tblTakipciKutusu_tblTakipci" FromRole="tblTakipci" ToRole="tblTakipciKutusu" />
+  </EntityType>
+  <EntityType Name="tblTakipciKutusu">
+    <Key>
+      <PropertyRef Name="TakipciKutusuID" />
+    </Key>
+    <Property Name="TakipciKutusuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TakipciID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblTakipci" Relationship="Self.FK_tblTakipciKutusu_tblTakipci" FromRole="tblTakipciKutusu" ToRole="tblTakipci" />
+  </EntityType>
+  <EntityType Name="tblTakipEdilen">
+    <Key>
+      <PropertyRef Name="TakipEdilenID" />
+    </Key>
+    <Property Name="TakipEdilenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" />
+    <Property Name="BildirimID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblBildirimler" Relationship="Self.FK_tblTakipEdilen_tblBildirimler" FromRole="tblTakipEdilen" ToRole="tblBildirimler" />
+    <NavigationProperty Name="tblKullaniciBilgileri" Relationship="Self.FK_tblTakipEdilen_tblKullaniciBilgileri" FromRole="tblTakipEdilen" ToRole="tblKullaniciBilgileri" />
+    <NavigationProperty Name="tblTakipEdilenKutusu" Relationship="Self.FK_tblTakipEdilenKutusu_tblTakipEdilen" FromRole="tblTakipEdilen" ToRole="tblTakipEdilenKutusu" />
+  </EntityType>
+  <EntityType Name="tblTakipEdilenKutusu">
+    <Key>
+      <PropertyRef Name="TakipEdilenKutusuID" />
+    </Key>
+    <Property Name="TakipEdilenKutusuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TakipEdilenID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblTakipEdilen" Relationship="Self.FK_tblTakipEdilenKutusu_tblTakipEdilen" FromRole="tblTakipEdilenKutusu" ToRole="tblTakipEdilen" />
+  </EntityType>
+  <EntityType Name="tblTweetKutusu">
+    <Key>
+      <PropertyRef Name="TweetKutusuID" />
+    </Key>
+    <Property Name="TweetKutusuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TweetID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblTweetler" Relationship="Self.FK_tblTweetKutusu_tblTweetler" FromRole="tblTweetKutusu" ToRole="tblTweetler" />
+  </EntityType>
+  <EntityType Name="tblTweetler">
+    <Key>
+      <PropertyRef Name="TweetID" />
+    </Key>
+    <Property Name="TweetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tweetİcerik" Type="String" MaxLength="140" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TweetFoto" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="KullaniciBilgileriID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblBegeniler" Relationship="Self.FK_tblBegeniler_tblTweetler" FromRole="tblTweetler" ToRole="tblBegeniler" />
+    <NavigationProperty Name="tblKullaniciBilgileri" Relationship="Self.FK_tblTweetler_tblKullaniciBilgileri" FromRole="tblTweetler" ToRole="tblKullaniciBilgileri" />
+    <NavigationProperty Name="tblTweetKutusu" Relationship="Self.FK_tblTweetKutusu_tblTweetler" FromRole="tblTweetler" ToRole="tblTweetKutusu" />
+  </EntityType>
+  <Association Name="FK_tblBegeniKutusu_tblBegeniler">
+    <End Role="tblBegeniler" Type="Self.tblBegeniler" Multiplicity="1" />
+    <End Role="tblBegeniKutusu" Type="Self.tblBegeniKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBegeniler">
+        <PropertyRef Name="BegeniID" />
+      </Principal>
+      <Dependent Role="tblBegeniKutusu">
+        <PropertyRef Name="BegeniID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblBegeniler_tblTweetler">
+    <End Role="tblTweetler" Type="Self.tblTweetler" Multiplicity="1" />
+    <End Role="tblBegeniler" Type="Self.tblBegeniler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTweetler">
+        <PropertyRef Name="TweetID" />
+      </Principal>
+      <Dependent Role="tblBegeniler">
+        <PropertyRef Name="TweetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblBildirimKutusu_tblBildirimler">
+    <End Role="tblBildirimler" Type="Self.tblBildirimler" Multiplicity="1" />
+    <End Role="tblBildirimKutusu" Type="Self.tblBildirimKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBildirimler">
+        <PropertyRef Name="BildirimID" />
+      </Principal>
+      <Dependent Role="tblBildirimKutusu">
+        <PropertyRef Name="BildirimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipci_tblBildirimler">
+    <End Role="tblBildirimler" Type="Self.tblBildirimler" Multiplicity="1" />
+    <End Role="tblTakipci" Type="Self.tblTakipci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBildirimler">
+        <PropertyRef Name="BildirimID" />
+      </Principal>
+      <Dependent Role="tblTakipci">
+        <PropertyRef Name="BildirimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipEdilen_tblBildirimler">
+    <End Role="tblBildirimler" Type="Self.tblBildirimler" Multiplicity="1" />
+    <End Role="tblTakipEdilen" Type="Self.tblTakipEdilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblBildirimler">
+        <PropertyRef Name="BildirimID" />
+      </Principal>
+      <Dependent Role="tblTakipEdilen">
+        <PropertyRef Name="BildirimID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDM_tblKullaniciBilgileri">
+    <End Role="tblKullaniciBilgileri" Type="Self.tblKullaniciBilgileri" Multiplicity="1" />
+    <End Role="tblDM" Type="Self.tblDM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKullaniciBilgileri">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Principal>
+      <Dependent Role="tblDM">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDMKutusu_tblDM">
+    <End Role="tblDM" Type="Self.tblDM" Multiplicity="1" />
+    <End Role="tblDMKutusu" Type="Self.tblDMKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDM">
+        <PropertyRef Name="DmID" />
+      </Principal>
+      <Dependent Role="tblDMKutusu">
+        <PropertyRef Name="DmID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblKullanicilar_tblKullaniciBilgileri">
+    <End Role="tblKullaniciBilgileri" Type="Self.tblKullaniciBilgileri" Multiplicity="1" />
+    <End Role="tblKullanicilar" Type="Self.tblKullanicilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKullaniciBilgileri">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Principal>
+      <Dependent Role="tblKullanicilar">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipci_tblKullaniciBilgileri">
+    <End Role="tblKullaniciBilgileri" Type="Self.tblKullaniciBilgileri" Multiplicity="1" />
+    <End Role="tblTakipci" Type="Self.tblTakipci" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKullaniciBilgileri">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Principal>
+      <Dependent Role="tblTakipci">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipEdilen_tblKullaniciBilgileri">
+    <End Role="tblKullaniciBilgileri" Type="Self.tblKullaniciBilgileri" Multiplicity="1" />
+    <End Role="tblTakipEdilen" Type="Self.tblTakipEdilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKullaniciBilgileri">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Principal>
+      <Dependent Role="tblTakipEdilen">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTweetler_tblKullaniciBilgileri">
+    <End Role="tblKullaniciBilgileri" Type="Self.tblKullaniciBilgileri" Multiplicity="1" />
+    <End Role="tblTweetler" Type="Self.tblTweetler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKullaniciBilgileri">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Principal>
+      <Dependent Role="tblTweetler">
+        <PropertyRef Name="KullaniciBilgileriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipciKutusu_tblTakipci">
+    <End Role="tblTakipci" Type="Self.tblTakipci" Multiplicity="1" />
+    <End Role="tblTakipciKutusu" Type="Self.tblTakipciKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTakipci">
+        <PropertyRef Name="TakipciID" />
+      </Principal>
+      <Dependent Role="tblTakipciKutusu">
+        <PropertyRef Name="TakipciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTakipEdilenKutusu_tblTakipEdilen">
+    <End Role="tblTakipEdilen" Type="Self.tblTakipEdilen" Multiplicity="1" />
+    <End Role="tblTakipEdilenKutusu" Type="Self.tblTakipEdilenKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTakipEdilen">
+        <PropertyRef Name="TakipEdilenID" />
+      </Principal>
+      <Dependent Role="tblTakipEdilenKutusu">
+        <PropertyRef Name="TakipEdilenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblTweetKutusu_tblTweetler">
+    <End Role="tblTweetler" Type="Self.tblTweetler" Multiplicity="1" />
+    <End Role="tblTweetKutusu" Type="Self.tblTweetKutusu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblTweetler">
+        <PropertyRef Name="TweetID" />
+      </Principal>
+      <Dependent Role="tblTweetKutusu">
+        <PropertyRef Name="TweetID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbTwitterEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tblBegeniKutusu" EntityType="Self.tblBegeniKutusu" />
+    <EntitySet Name="tblBegeniler" EntityType="Self.tblBegeniler" />
+    <EntitySet Name="tblBildirimKutusu" EntityType="Self.tblBildirimKutusu" />
+    <EntitySet Name="tblBildirimler" EntityType="Self.tblBildirimler" />
+    <EntitySet Name="tblDM" EntityType="Self.tblDM" />
+    <EntitySet Name="tblDMKutusu" EntityType="Self.tblDMKutusu" />
+    <EntitySet Name="tblKullaniciBilgileri" EntityType="Self.tblKullaniciBilgileri" />
+    <EntitySet Name="tblKullanicilar" EntityType="Self.tblKullanicilar" />
+    <EntitySet Name="tblTakipci" EntityType="Self.tblTakipci" />
+    <EntitySet Name="tblTakipciKutusu" EntityType="Self.tblTakipciKutusu" />
+    <EntitySet Name="tblTakipEdilen" EntityType="Self.tblTakipEdilen" />
+    <EntitySet Name="tblTakipEdilenKutusu" EntityType="Self.tblTakipEdilenKutusu" />
+    <EntitySet Name="tblTweetKutusu" EntityType="Self.tblTweetKutusu" />
+    <EntitySet Name="tblTweetler" EntityType="Self.tblTweetler" />
+    <AssociationSet Name="FK_tblBegeniKutusu_tblBegeniler" Association="Self.FK_tblBegeniKutusu_tblBegeniler">
+      <End Role="tblBegeniler" EntitySet="tblBegeniler" />
+      <End Role="tblBegeniKutusu" EntitySet="tblBegeniKutusu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblBegeniler_tblTweetler" Association="Self.FK_tblBegeniler_tblTweetler">
+      <End Role="tblTweetler" EntitySet="tblTweetler" />
+      <End Role="tblBegeniler" EntitySet="tblBegeniler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblBildirimKutusu_tblBildirimler" Association="Self.FK_tblBildirimKutusu_tblBildirimler">
+      <End Role="tblBildirimler" EntitySet="tblBildirimler" />
+      <End Role="tblBildirimKutusu" EntitySet="tblBildirimKutusu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipci_tblBildirimler" Association="Self.FK_tblTakipci_tblBildirimler">
+      <End Role="tblBildirimler" EntitySet="tblBildirimler" />
+      <End Role="tblTakipci" EntitySet="tblTakipci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipEdilen_tblBildirimler" Association="Self.FK_tblTakipEdilen_tblBildirimler">
+      <End Role="tblBildirimler" EntitySet="tblBildirimler" />
+      <End Role="tblTakipEdilen" EntitySet="tblTakipEdilen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDM_tblKullaniciBilgileri" Association="Self.FK_tblDM_tblKullaniciBilgileri">
+      <End Role="tblKullaniciBilgileri" EntitySet="tblKullaniciBilgileri" />
+      <End Role="tblDM" EntitySet="tblDM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDMKutusu_tblDM" Association="Self.FK_tblDMKutusu_tblDM">
+      <End Role="tblDM" EntitySet="tblDM" />
+      <End Role="tblDMKutusu" EntitySet="tblDMKutusu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblKullanicilar_tblKullaniciBilgileri" Association="Self.FK_tblKullanicilar_tblKullaniciBilgileri">
+      <End Role="tblKullaniciBilgileri" EntitySet="tblKullaniciBilgileri" />
+      <End Role="tblKullanicilar" EntitySet="tblKullanicilar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipci_tblKullaniciBilgileri" Association="Self.FK_tblTakipci_tblKullaniciBilgileri">
+      <End Role="tblKullaniciBilgileri" EntitySet="tblKullaniciBilgileri" />
+      <End Role="tblTakipci" EntitySet="tblTakipci" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipEdilen_tblKullaniciBilgileri" Association="Self.FK_tblTakipEdilen_tblKullaniciBilgileri">
+      <End Role="tblKullaniciBilgileri" EntitySet="tblKullaniciBilgileri" />
+      <End Role="tblTakipEdilen" EntitySet="tblTakipEdilen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTweetler_tblKullaniciBilgileri" Association="Self.FK_tblTweetler_tblKullaniciBilgileri">
+      <End Role="tblKullaniciBilgileri" EntitySet="tblKullaniciBilgileri" />
+      <End Role="tblTweetler" EntitySet="tblTweetler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipciKutusu_tblTakipci" Association="Self.FK_tblTakipciKutusu_tblTakipci">
+      <End Role="tblTakipci" EntitySet="tblTakipci" />
+      <End Role="tblTakipciKutusu" EntitySet="tblTakipciKutusu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTakipEdilenKutusu_tblTakipEdilen" Association="Self.FK_tblTakipEdilenKutusu_tblTakipEdilen">
+      <End Role="tblTakipEdilen" EntitySet="tblTakipEdilen" />
+      <End Role="tblTakipEdilenKutusu" EntitySet="tblTakipEdilenKutusu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblTweetKutusu_tblTweetler" Association="Self.FK_tblTweetKutusu_tblTweetler">
+      <End Role="tblTweetler" EntitySet="tblTweetler" />
+      <End Role="tblTweetKutusu" EntitySet="tblTweetKutusu" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

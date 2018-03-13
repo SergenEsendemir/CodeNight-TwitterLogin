@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbTwitterModelStoreContainer" CdmEntityContainer="DbTwitterEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DbTwitterModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBegeniKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblBegeniKutusu">
+        <MappingFragment StoreEntitySet="tblBegeniKutusu">
+          <ScalarProperty Name="BegeniKutusuID" ColumnName="BegeniKutusuID" />
+          <ScalarProperty Name="BegeniID" ColumnName="BegeniID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBegeniler">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblBegeniler">
+        <MappingFragment StoreEntitySet="tblBegeniler">
+          <ScalarProperty Name="BegeniID" ColumnName="BegeniID" />
+          <ScalarProperty Name="TweetID" ColumnName="TweetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBildirimKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblBildirimKutusu">
+        <MappingFragment StoreEntitySet="tblBildirimKutusu">
+          <ScalarProperty Name="BildirimKutusuID" ColumnName="BildirimKutusuID" />
+          <ScalarProperty Name="BildirimID" ColumnName="BildirimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBildirimler">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblBildirimler">
+        <MappingFragment StoreEntitySet="tblBildirimler">
+          <ScalarProperty Name="BildirimID" ColumnName="BildirimID" />
+          <ScalarProperty Name="BildirimMesaji" ColumnName="BildirimMesaji" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDM">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblDM">
+        <MappingFragment StoreEntitySet="tblDM">
+          <ScalarProperty Name="DmID" ColumnName="DmID" />
+          <ScalarProperty Name="DmMesajBilgisi" ColumnName="DmMesajBilgisi" />
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDMKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblDMKutusu">
+        <MappingFragment StoreEntitySet="tblDMKutusu">
+          <ScalarProperty Name="DmKutusuID" ColumnName="DmKutusuID" />
+          <ScalarProperty Name="DmID" ColumnName="DmID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKullaniciBilgileri">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblKullaniciBilgileri">
+        <MappingFragment StoreEntitySet="tblKullaniciBilgileri">
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+          <ScalarProperty Name="KullaniciAdiSoyadi" ColumnName="KullaniciAdiSoyadi" />
+          <ScalarProperty Name="KullaniciTelefon" ColumnName="KullaniciTelefon" />
+          <ScalarProperty Name="KullaniciEmail" ColumnName="KullaniciEmail" />
+          <ScalarProperty Name="KullaniciSifre" ColumnName="KullaniciSifre" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblKullanicilar">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblKullanicilar">
+        <MappingFragment StoreEntitySet="tblKullanicilar">
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Nickname" ColumnName="Nickname" />
+          <ScalarProperty Name="KullaniciSifre" ColumnName="KullaniciSifre" />
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTakipci">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTakipci">
+        <MappingFragment StoreEntitySet="tblTakipci">
+          <ScalarProperty Name="TakipciID" ColumnName="TakipciID" />
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+          <ScalarProperty Name="BildirimID" ColumnName="BildirimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTakipciKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTakipciKutusu">
+        <MappingFragment StoreEntitySet="tblTakipciKutusu">
+          <ScalarProperty Name="TakipciKutusuID" ColumnName="TakipciKutusuID" />
+          <ScalarProperty Name="TakipciID" ColumnName="TakipciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTakipEdilen">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTakipEdilen">
+        <MappingFragment StoreEntitySet="tblTakipEdilen">
+          <ScalarProperty Name="TakipEdilenID" ColumnName="TakipEdilenID" />
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+          <ScalarProperty Name="BildirimID" ColumnName="BildirimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTakipEdilenKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTakipEdilenKutusu">
+        <MappingFragment StoreEntitySet="tblTakipEdilenKutusu">
+          <ScalarProperty Name="TakipEdilenKutusuID" ColumnName="TakipEdilenKutusuID" />
+          <ScalarProperty Name="TakipEdilenID" ColumnName="TakipEdilenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTweetKutusu">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTweetKutusu">
+        <MappingFragment StoreEntitySet="tblTweetKutusu">
+          <ScalarProperty Name="TweetKutusuID" ColumnName="TweetKutusuID" />
+          <ScalarProperty Name="TweetID" ColumnName="TweetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTweetler">
+      <EntityTypeMapping TypeName="DbTwitterModel.tblTweetler">
+        <MappingFragment StoreEntitySet="tblTweetler">
+          <ScalarProperty Name="TweetID" ColumnName="TweetID" />
+          <ScalarProperty Name="Tweetİcerik" ColumnName="Tweetİcerik" />
+          <ScalarProperty Name="TweetFoto" ColumnName="TweetFoto" />
+          <ScalarProperty Name="KullaniciBilgileriID" ColumnName="KullaniciBilgileriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

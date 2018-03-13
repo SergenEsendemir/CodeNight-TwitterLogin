@@ -1,0 +1,67 @@
+﻿
+@*@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>*@
+
+
+
+
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div class="container-fluid register-head">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="margin-top: 7%;">
+                <h3>Twitter'a giriş yap.</h3>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" id="user" class="form-control" placeholder="Kullanıcı Adı yada Eposta" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" class="form-control" placeholder="Şifre" />
+                    </div>
+                    <div class="form-group">
+                        <a href="#" id="giris" class="btn btn-info btn-block">Giriş Yap</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(function () {
+            $("#giris").click(function () {
+                var data = {
+                    kulAd: $("#user").val(),
+                    parola: $("#password").val()
+                }
+                console.log(data)
+                $.get('http://localhost:15227/api/Kullanici/Giris?kulAd=' + data.kulAd + '&parola=' + data.parola, function (r) {
+                    if (r == "+")
+                        window.location = "/MainPage/MainPage";
+                    else
+                        window.alert("Başarısız Giriş...");
+
+                })
+            });
+        });
+    </script>
+</body>
+</html>

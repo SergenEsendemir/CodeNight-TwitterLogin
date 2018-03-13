@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ee3590bd96c44f69186d74c3a8ad657" Name="Diagram1">
+        <EntityTypeShape EntityType="DbTwitterModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblBegeniKutusu" Width="1.5" PointX="7.5" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblBegeniler" Width="1.5" PointX="5.25" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblBildirimKutusu" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblBildirimler" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblDM" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblDMKutusu" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblKullaniciBilgileri" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblKullanicilar" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTakipci" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTakipciKutusu" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTakipEdilen" Width="1.5" PointX="6" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTakipEdilenKutusu" Width="1.5" PointX="8.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTweetKutusu" Width="1.5" PointX="5.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbTwitterModel.tblTweetler" Width="1.5" PointX="3" PointY="16.75" IsExpanded="true" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblBegeniKutusu_tblBegeniler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblBegeniler_tblTweetler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblBildirimKutusu_tblBildirimler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipci_tblBildirimler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipEdilen_tblBildirimler" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblDM_tblKullaniciBilgileri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblDMKutusu_tblDM" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblKullanicilar_tblKullaniciBilgileri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipci_tblKullaniciBilgileri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipEdilen_tblKullaniciBilgileri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTweetler_tblKullaniciBilgileri" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipciKutusu_tblTakipci" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTakipEdilenKutusu_tblTakipEdilen" ManuallyRouted="false" />
+        <AssociationConnector Association="DbTwitterModel.FK_tblTweetKutusu_tblTweetler" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

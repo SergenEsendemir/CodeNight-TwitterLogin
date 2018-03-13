@@ -1,0 +1,86 @@
+﻿@*@model WebApplication1.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}*@
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <div class="container-fluid register-head">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4" style="margin-top: 7%;">
+                <h3>Twitter'a bugün katıl.</h3>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Adı ve Soyadı" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="email" class="form-control" placeholder="Eposta Adresi" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="username" class="form-control" placeholder="Kullanıcı Adı" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="telefon" class="form-control" placeholder="Telefon" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" class="form-control" placeholder="Şifre" />
+                    </div>
+                    <div class="form-group">
+                        <input type="button" id="kaydol" value="Kaydol" class="btn btn-info btn-block" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#kaydol").click(function () {
+                
+                var data = {
+                    nick: $("#username").val(),
+                    kulAd: $("#name").val(),
+                    parola: $("#password").val(),
+                    mail : $("#email").val(),
+                    telefon: $("#telefon").val()
+                }
+                if (data.nick == "" || data.kulAd == "" || data.parola == "" || data.mail == "" || data.telefon == null)
+                {
+                    alert("Boş alan bırakmayınız.");
+                }
+                else
+                {
+                    console.log(data)
+                    $.get('http://localhost:15227/api/Kullanici/Kaydol?kulAd=' + data.kulAd + '&telefon=' + data.telefon + '&mail=' + data.mail + '&parola=' + data.parola + '&nick=' + data.nick, function (r) {
+                        if (r == "+")
+                            alert("Basarili");
+                        else {
+                            alert("Basarisiz");
+                        }
+                    });
+                }
+                
+
+                
+            });
+        });
+    </script>
+</body>
+</html>
